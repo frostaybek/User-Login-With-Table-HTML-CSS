@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: calibri;
+    color: white;
+}   
+    
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(24, 23, 23);
+}
+
+.padding{
+    padding: 0px 12px;
+}
+
+.input{
+    outline: none;
+    background-color: #35363A;
+    font-size: 20px;
+    border: 1px solid #54555c;
+    color: white;
+    font-family: calibri;
+    margin: 0 4px;
+    padding-left: 4px;
+    caret-color: white;
+    border-radius: 2px;
+}
+
+.radios{
+    height: 22px;
+}
+
+.radio-td{
+    padding-left: 14px;
+}
+
+#input-top{
+    width: 180px;
+    height: 24px;
+}
+
+#bottom-td{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-align: center;
+    zoom: 90%;
+    line-height: 32px;
+    padding: 4px 0px;
+}
+
+::selection{
+    background: rgb(224, 39, 224);
+    color: black;
+}
+
+table{
+    color: white;
+    border: 1px solid #35363A;
+    font-size: 22px;
+    zoom: 160%;
+    border-radius: 10px;
+    padding: 1px;
+}
+
+td{
+    border: 1px solid #35363A;
+    height: 34px;
+    padding: 2px;
+}
+
+#a{
+    color: orange;
+    text-decoration: none;
+    font-size: 22px;
+    transition: all ease 0.4s;
+    list-style-type: none;
+}
+
+#a:hover{
+    color: rgb(110, 75, 9);
+}
+
+#a:active{
+    color: crimson;
+}
+
+.dot, .label, #a{
+    user-select: none;
+}
+
+#tdd{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    zoom: 90%;
+    padding: 6px 12px;
+    line-height: 36px;
+}

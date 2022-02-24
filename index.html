@@ -1,99 +1,53 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayaz Aybek - Table</title>
-    <style>
-
-    html{
-        height:100%;
-    }
-
-    body{
-        height:100%;
-        display: -webkit-box;
-        display: -webkit-flex;
-        align-items: center;
-        -webkit-justify-content:center;
-        justify-content: center;
-        background: rgb(24, 23, 23);
-    }
-
-    .input{
-        outline: none;
-        background-color: #35363A;
-        font-size: 18px;
-        border: 1px solid #54555c;
-        color: white;
-        font-family: calibri;
-    }
-
-    ::selection{
-        background: rgb(224, 39, 224);
-        color: black;
-    }
-
-    table{
-        color: white;
-        border: 1px solid #35363A;
-        font-family: calibri;
-        font-size: 22px;
-
-    }
-
-    td{
-        border: 1px solid #35363A;
-        height: 32px;
-    }
-
-    #a{
-        list-style-type: none;
-        color: orange;
-        text-decoration: none;
-        font-size: 22px;
-        transition-duration: 0.4s;
-        user-select: none;
-    }
-
-    #a:hover{
-        color: rgb(122, 96, 47);
-    }
-
-    #a:active{
-        color: crimson;
-    }
-
-    .no{
-        user-select: none;
-    }
-
-    label{
-        user-select: none;
-    }
-        
-    </style>
-
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <table cellspacing="0" cellpadding="3">
 
-        <tr><td colspan="3" style="padding-left: 10px; padding-right: 10px;">Kullanıcı Bilgileri</td> </tr>
         <tr>
-        <td style="padding-left: 10px; padding-right: 10px;">Adı</td> <td class="no">:</td> <td> <input style="width: 180px; height: 24px;" class="input" type="text"> </td>
-        </tr>
-        <td style="padding-left: 10px; padding-right: 10px;">Soyadı</td> <td class="no">:</td> <td> <input style="width: 180px; height: 24px;" class="input" type="text"> </td>
-        <tr>
-        <td style="padding-left: 10px; padding-right: 10px;">Cinsiyeti</td> <td class="no">:</td> <td> <input class="input" style="height: 24px;" type="radio" name="cinsiyet" id="kadin"><label for="kadin">Kadın</label>
-        <input style="height: 24px; padding-left: 10px;" class="input" type="radio" name="cinsiyet" id="erkek"><label for="erkek">Erkek</label></td>
+            <td colspan="3" class="padding" id="tdd">User Information</td>
         </tr>
         <tr>
-        <td style="padding-left: 10px;">Doğum tarihi  </td> <td class="no">:</td> <td> <input style="width: 180px;" class="input" type="date"> </td>
-        </tr>      
-
-        <td colspan="3" style="font-family: calibri; font-size: 22px; text-align: center;">a Ayaz Aybek production <a id="a" style="list-style-type: none;" href="https://github.com/frostaybek" target="_blank">GitHub</a></td>
-
+            <td class="padding">Name</td>
+            <td class="dot">:</td>
+            <td>
+                <input id="input-top" class="input" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td class="padding">Surname</td>
+            <td class="dot">:</td>
+            <td> <input id="input-top" class="input" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td class="padding">Sex</td>
+            <td class="dot">:</td>
+            <td class="radio-td">
+                <input class="radios" type="radio" name="cinsiyet" id="woman" class="gender-label">
+                <label for="woman" class="gender-label">Woman</label>
+                <input class="radios" class="radios" type="radio" name="cinsiyet" id="man">
+                <label for="man" class="gender-label">Man</label>
+            </td>
+        </tr>
+        <tr>
+            <td class="padding">Birthday</td>
+            <td class="dot">:</td>
+            <td>
+                <input style="width: 180px;" class="input" type="date">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" id="bottom-td">a Ayaz Aybek production
+                <a id="a" href="https://github.com/frostaybek" target="_blank">GitHub</a>
+            </td>
+        </tr>
     </table>
 </body>
 </html>
